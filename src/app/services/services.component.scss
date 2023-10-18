@@ -1,0 +1,42 @@
+.services {
+color: #6D91EE;
+ font-size: 64px;
+ font-family: Poppins;
+ font-weight: 900;
+ line-height: 89.50px;
+ word-wrap: break-word
+}
+*{
+    font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+} .card{
+    width: 385px;
+height: 504px;
+flex-shrink: 0;
+border-radius: 30px;
+background: #FFF;
+box-shadow: 0px 10px 30px 0px rgba(16, 51, 30, 0.10);
+} .btn-help {
+    width: 280px;
+height: 86px;
+flex-shrink: 0;
+border-radius: 71px;
+background: #5180F6;
+color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.title-container {
+  position: relative;
+  text-align: center;
+}
+
+.centered-title {
+  display: inline-block;
+  background-color: white;
+  padding: 0 20px;
+}
