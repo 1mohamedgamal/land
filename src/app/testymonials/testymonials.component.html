@@ -1,49 +1,51 @@
 <section class="container py-5">
-  <div class="heading-wrapper justify-content-center py-3 d-flex">
-<div class="line-wrapper d-flex flex-column">
-    <img src="../../assets/images/Line 2.png" alt="" srcset="" >
-    <img src="../../assets/images/Line 4.png" alt="" srcset="" class="py-5">
-
-</div>
-
-    <h1 class="d-flex justify-content-center testi">Testymonials</h1>
-
-    <div class="line-wrapper">
-    <img src="../../assets/images/Line 1.png" alt="" srcset="">
-    <div class="py-5">
-<img src="../../assets/images/Line 3.png" alt="" srcset="" class="">
-
-</div>
-</div>
-
-
- 
-</div>
   <div class="row py-5">
-    <div class="col-md-6" *ngFor="let testimonial of testymonials">
+    <div class="heading-wrapper justify-content-center py-3 d-flex">
+      <div class="line-wrapper d-flex flex-column">
+        <img src="../../assets/images/Line 2.png" alt="" srcset="" />
+        <img
+          src="../../assets/images/Line 4.png"
+          alt=""
+          srcset=""
+          class="py-5"
+        />
+      </div>
+
+      <h1 class="d-flex justify-content-center testi">Testymonials</h1>
+
+      <div class="line-wrapper">
+        <img src="../../assets/images/Line 1.png" alt="" srcset="" />
+        <div class="py-5">
+          <img src="../../assets/images/Line 3.png" alt="" srcset="" class="" />
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8 col-xl-6" *ngFor="let testimonial of testymonials">
       <div class="card mb-3">
         <div class="card-body d-flex">
-          <img [src]="testimonial.avatar"
-            class="rounded-circle d-flex justify-content-start img-test" alt="woman avatar" />
+          <img
+            [src]="testimonial.avatar"
+            class="rounded-circle d-flex justify-content-start img-test"
+            alt="woman avatar"
+          />
           <div class="col-lg-8 ms-2">
-            <h1 class="fw-bolder name">{{testimonial.email}}</h1>
-            <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-           <div class="rating">
+            <h1 class="fw-bolder name">{{ testimonial.email }}</h1>
+            <p class="para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book
+            </p>
+            <div class="rating">
               <span class="star">&#9733;</span>
               <span class="star">&#9733;</span>
               <span class="star">&#9733;</span>
               <span class="star">&#9733;</span>
               <span class="star">&#9733;</span>
             </div>
-     
-        </div>
+          </div>
         </div>
       </div>
     </div>
-
-   
-
-  
-    
   </div>
 </section>

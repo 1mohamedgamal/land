@@ -15,60 +15,61 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6 d-flex justify-content-end">
-      <div class="contact-form py-2">
-        <div>
-          <input
-            class="form-control"
-            type="text"
-            placeholder="Name"
-            aria-label=".form-control-lg example"
-            class="edit-in border-0"
-          />
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-4 col-xl-6 col-sm-2 d-flex justify-content-end">
+        <div class="contact-form py-2">
+          <div>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Name"
+              aria-label=".form-control-lg example"
+              class="edit-in border-0"
+              formControlName="name"
+            />
+          </div>
+          <div class="py-3">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Email"
+              aria-label=".form-control-lg example"
+              class="edit-in border-0"
+              formControlName="email"
+            />
+          </div>
+
+          <div>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Phone"
+              aria-label=".form-control-lg example"
+              class="edit-in border-0"
+              formControlName="phone"
+            />
+
+            <div class="d-flex justify-content-center py-3">
+              <button type="button" class="btn edit-send">Send</button>
+            </div>
+          </div>
         </div>
-        <div class="py-3">
-          <input
-            class="form-control"
-            type="text"
-            placeholder="Email"
-            aria-label=".form-control-lg example"
-            class="edit-in border-0"
-          />
+      </div>
+
+      <div class="col-md-4 col-xl-6 col-sm-2 py-4">
+        <div class="icon d-flex py-5 ms-5">
+          <i class="fa-solid fa-envelope icon-mail py-1"></i>
+          <span class="ms-1">upskilling.eg1@gmail.com</span>
         </div>
 
-        <div>
-          <input
-            class="form-control"
-            type="text"
-            placeholder="Phone"
-            aria-label=".form-control-lg example"
-            class="edit-in border-0"
-          />
-
-          <div class="d-flex justify-content-center py-3">
-            <button type="button" class="btn edit-send">Send</button>
+        <div class="icon d-flex px-5">
+          <div class="gx-5">
+            <i class="fa-sharp icon-mail fa-solid fa-phone"></i>
+            <span class="ms-1">+20 115 493 2137</span>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="col-md-6 py-4 ">
-
-        <div class="icon d-flex  py-5 ms-5">
-    <i class="fa-solid fa-envelope icon-mail py-1 ">  </i>
-     <span class="ms-1"> upskilling.eg1@gmail.com</span>
-    </div>
-
-    
-     <div class="icon d-flex px-5">
-        <div class="gx-5">
-            <i class="fa-sharp icon-mail fa-solid fa-phone"></i>
-     <span class="ms-1 "> +20 115 493 2137</span>
-    </div>
-    </div>
-
-    </div>
-
-</div>
+  </form>
 </div>

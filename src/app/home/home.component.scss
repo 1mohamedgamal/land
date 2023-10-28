@@ -1,71 +1,79 @@
 .home {
-    background-image: url('../../assets/images/Vector\ 7.png');
-    background-image: cover;
-    width: 1259px;
-    height: 840px;
-    flex-shrink: 0;
+  background-image: url("../../assets/images/Vector\ 7.png");
+  background-image: cover;
+  width: 1259px;
+  height: 840px;
+  flex-shrink: 0;
+  
 }
 
 .custom {
-    color: #6D91EE;
-    font-family: Poppins;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 118.5%; /* 71.1px */
+  color: #6d91ee;
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 118.5%; /* 71.1px */
 }
 
 .edit {
-    color: #6D91EE;
-    font-family: Poppins;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 118.5%;
-    letter-spacing: 15.855px;
+  color: #6d91ee;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 118.5%;
+  letter-spacing: 15.855px;
 }
 
 .car {
-    width: 83px;
-    height: 59px;
-    flex-shrink: 0;
-    margin-left: 10px; /* Add margin-left to move the image to the left */
+  width: 83px;
+  height: 59px;
+  flex-shrink: 0;
+  margin-left: 10px; /* Add margin-left to move the image to the left */
 }
 
 .btn-experts {
-    width: 167px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: #6D91EE;
+  width: clamp(
+    10.4375rem,
+    15%,
+    20rem
+  ); /* Adjust the min, preferred, and max values as needed */
+  height: clamp(3.125rem, 4%, 6rem);
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #6d91ee;
 }
 
 .lo1 {
-    flex-shrink: 0;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+font-size: clamp(1.25rem, 3.5rem + -1.875vw, 3.125rem);
+text-align: center;
 }
 
 .lo2 {
-    color: var(--Gray-2, #4F4F4F);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 250;
-    line-height: 89.5px; /* 93.229% */
+  color: var(--Gray-2, #4f4f4f);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 89.5px; /* 93.229% */
 }
 
 .para {
-    color: var(--Gray-2, #4F4F4F);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 25.5px; /* 141.667% */
+  color: var(--Gray-2, #4f4f4f);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25.5px; /* 141.667% */
 }
 
 .btn-help {
-    width: 280px;
-    height: 86px;
-    border-radius: 71px;
-    background: #5180F6;
-    margin-left: 10px; /* Add margin-left to move the button to the left */
+  width: 280px;
+  height: 86px;
+  border-radius: 71px;
+  background: #5180f6;
+  margin-left: 10px; /* Add margin-left to move the button to the left */
 }
