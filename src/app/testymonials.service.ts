@@ -11,6 +11,8 @@ export class TestymonialsService {
 
   getTestymonials() {
     return this.http.get(`${this.apiUrl}}/testymonials`);
+
+    
   }
 }
   

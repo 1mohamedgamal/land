@@ -1,44 +1,64 @@
-
-
-.right-side{
-    background-image: url('../../assets/images/Rectangle\ 262.png');
-flex-shrink: 0;
-background-size: cover;
-width: 1900px;
-height: 840px;
-flex-shrink: 0;
-
-
+/* Default styles for larger screens */
+.right-side {
+  background-image: url('../../assets/images/Rectangle 262.png');
+  flex-shrink: 0;
+  background-size: cover;
+  width: 118.75rem; /* 1900px converted to rem */
+  height: 52.5rem; /* 840px converted to rem */
+  flex-shrink: 0;
 }
-.head1{
-    color: #FFF;
-text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-font-family: Poppins;
-font-size: 64px;
-font-style: normal;
-font-weight: 900;
-line-height: 89.5px; /* 139.844% */
-}.left-side{
-flex-shrink: 0;
-background-image: url('../../assets/images/left.png');
 
-background-size: cover;
-background-repeat: no-repeat;
-width: 1100px;
-height: 840px;
-}
-p{
+.head1 {
   color: #FFF;
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 133.333% */
-} .lolo{
+  text-shadow: 0px 0.25rem 1.25rem rgba(0, 0, 0, 0.15);
+  font-family: Poppins;
+  font-size: 4rem; /* 64px converted to rem */
+  font-style: normal;
+  font-weight: 900;
+  line-height: 5.59375rem; /* 89.5px converted to rem */
+}
 
-  width: 280px;
-height: 86px;
-flex-shrink: 0;
-border-radius: 71px;
-background: #EEC04B;
+.left-side {
+  flex-shrink: 0;
+  background-image: url('../../assets/images/left.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 68.75rem; /* 1100px converted to rem */
+  height: 52.5rem; /* 840px converted to rem */
+}
+
+p {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1.125rem; /* 18px converted to rem */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 24px converted to rem */
+}
+
+.lolo {
+  width: 17.5rem; /* 280px converted to rem */
+  height: 5.375rem; /* 86px converted to rem */
+  flex-shrink: 0;
+  border-radius: 4.4375rem; /* 71px converted to rem */
+  background: #EEC04B;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .right-side {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height to content */
+  }
+
+  .left-side {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height to content */
+  }
+}
+/* Hide the background image for screens below x-large (1200px) */
+@media (max-width: 1199px) {
+  .left-side {
+    background-image: none;
+  }
 }

@@ -1,44 +1,48 @@
- .img-test {
-    width: 80px;
-height: 80px;
-flex-shrink: 0;
-border-radius: 80px;
+:root {
+  --base-font-size: 16px; /* Adjust this to your preferred base font size */
+}
 
- } .card {
-    width: 577px;
-height: 233px;
-flex-shrink: 0;
-border-radius: 40px;
-border: 1px solid #6D91EE;
-background: #FFF;
- } 
- .para{
-    color: #22366A;
-font-family: Poppins;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 157.143% */
-width: 423px;
- }
- .star{
-    width: 18px;
-height: 18px;
-flex-shrink: 0;
-color: #6D91EE;
- } .testi{
-color: #6D91EE;
-text-align: center;
-font-size: 64px;
-font-style: normal;
-font-weight: 900;
-line-height: 89.5px; /* 139.844% */
- }
- .name{
-    color: #6D91EE;
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 22px; /* 122.222% */
- }
+.img-test {
+  width: 80px;
+height: 80px; /* Allow the height to adjust proportionally */
+  flex-shrink: 0;
+  border-radius: 50%; /* Make the border radius 50% to create a circular avatar */
+}
+
+.card {
+  width: 100%; /* Use 100% width for responsiveness */
+  max-width: 577px; /* Add a maximum width to control card size on larger screens */
+  height: auto; /* Allow the height to adjust based on content */
+  flex-shrink: 0;
+  border-radius: 2.664rem ; /* Use a percentage for rounded corners */
+  border: 1px solid #6D91EE;
+  background: #FFF;
+}
+
+.para {
+  color: #22366A;
+  font-family: Poppins;
+  font-size: 1rem; /* Adjust font size as needed */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.57143rem; /* Adjust line height as needed */
+  max-width: 30rem; /* Set a maximum width for text content */
+}
+
+.testi {
+  color: #6D91EE;
+  text-align: center;
+  font-size: clamp(2rem, 10vw, 5rem); /* Responsive font size */
+  font-style: normal;
+  font-weight: 900;
+  line-height: 4.464rem; /* Adjust line height as needed */
+}
+
+.name {
+  color: #6D91EE;
+  font-family: Poppins;
+    font-size: clamp(1rem, -0.875rem + 8.333333vw, 1.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem; /* Adjust line height as needed */
+}

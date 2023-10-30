@@ -1,37 +1,50 @@
-.services {
-color: #6D91EE;
-text-align: center;
-    font-family: sans-serif;
-font-size: 64px;
-font-style: normal;
-font-weight: 900;
-line-height: 89.5px; /* 139.844% */
+:root {
+  --base-font-size: 16px; /* Adjust this to your preferred base font size */
+}
 
+.services {
+  color: #6D91EE;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 4rem; /* Equivalent to 64px with a base font size of 16px */
+  font-style: normal;
+  font-weight: 900;
+  line-height: 5.59375rem; /* Equivalent to 89.5px with a base font size of 16px */
 }
-*{
-    font-family: 'Inter', sans-serif;
-font-family: 'Poppins', sans-serif;
-} .card{
-    width: 385px;
-height: 504px;
-flex-shrink: 0;
-border-radius: 30px;
-background: #FFF;
-box-shadow: 0px 10px 30px 0px rgba(16, 51, 30, 0.10);
-} .btn-help {
-    width: 280px;
-height: 86px;
-flex-shrink: 0;
-border-radius: 71px;
-background: #5180F6;
-color: #FFF;
-text-align: center;
-font-family: Poppins;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+
+* {
+  font-family: 'Inter', 'Poppins', sans-serif;
 }
+
+/* ... Previous CSS code ... */
+
+.card {
+  width: 100%; /* Use 100% width for responsiveness */
+  max-width: 385px; /* Add a maximum width to control card size on larger screens */
+  height: auto; /* Allow the height to adjust based on content */
+  flex-shrink: 0;
+  border-radius: 4%; /* Use a percentage for rounded corners */
+  background: #FFF;
+  box-shadow: 0px 10px 30px 0px rgba(16, 51, 30, 0.10);
+}
+
+/* ... Rest of your CSS ... */
+
+.btn-help {
+  width: 17.5rem; /* Equivalent to 280px with a base font size of 16px */
+  height: 5.375rem; /* Equivalent to 86px with a base font size of 16px */
+  flex-shrink: 0;
+  border-radius: 4.4375rem; /* Equivalent to 71px with a base font size of 16px */
+  background: #5180F6;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem; /* Equivalent to 24px with a base font size of 16px */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; /* Adjust as needed */
+}
+
 .title-container {
   position: relative;
   text-align: center;
@@ -40,5 +53,5 @@ line-height: normal;
 .centered-title {
   display: inline-block;
   background-color: white;
-  padding: 0 20px;
+  padding: 0 1.25rem; /* Equivalent to 20px with a base font size of 16px */
 }

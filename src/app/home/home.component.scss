@@ -1,10 +1,10 @@
 .home {
   background-image: url("../../assets/images/Vector\ 7.png");
   background-image: cover;
-  width: 1259px;
-  height: 840px;
+  width: 78.6875rem;
+  height: 52.5rem;
   flex-shrink: 0;
-  
+  overflow: hidden;
 }
 
 .custom {
@@ -48,23 +48,24 @@
 .lo1 {
   flex-shrink: 0;
   font-size: 1.25rem;
-font-size: clamp(1.25rem, 3.5rem + -1.875vw, 3.125rem);
-text-align: center;
+  font-size: clamp(1rem, -0.875rem + 8.333333vw, 3.5rem);
+  text-align: center;
 }
 
 .lo2 {
   color: var(--Gray-2, #4f4f4f);
   text-align: center;
   font-family: Poppins;
-  font-size: 96px;
-  font-style: normal;
+  font-size: clamp(1rem, -0.875rem + 8.333333vw, 3.5rem);
+font-style: normal;
   font-weight: 250;
   line-height: 89.5px; /* 93.229% */
 }
 
 .para {
   color: var(--Gray-2, #4f4f4f);
-  font-size: 18px;
+    font-size: clamp(1rem, 2vmin, 3rem);
+
   font-style: normal;
   font-weight: 600;
   line-height: 25.5px; /* 141.667% */
