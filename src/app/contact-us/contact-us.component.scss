@@ -1,14 +1,18 @@
 .edit-in {
-  width: clamp(20rem, 49%, 30rem); /* Example clamping between 20rem and 30rem */
-  height: 3.5rem;   /* 56px converted to rem */
+  width: clamp(
+    20rem,
+    49%,
+    30rem
+  ); /* Example clamping between 20rem and 30rem */
+  height: 3.5rem; /* 56px converted to rem */
   flex-shrink: 0;
   border-radius: 3.8125rem; /* 61px converted to rem */
   background: #cedcff;
 }
 
 .edit-send {
-  width: 10.5rem;   /* 168px converted to rem */
-  height: 3.5rem;   /* 56px converted to rem */
+  width: 10.5rem; /* 168px converted to rem */
+  height: 3.5rem; /* 56px converted to rem */
   flex-shrink: 0;
   border-radius: 3.8125rem; /* 61px converted to rem */
   border: 0.1875rem solid #5180f6; /* 3px converted to rem */
@@ -37,8 +41,5 @@ h1 {
   width: 1.5rem; /* 24px converted to rem */
   height: 1.5rem; /* 24px converted to rem */
   flex-shrink: 0;
-  color: #6d91ee;
-}
-.span{
-
+  color: #cedcff;
 }
